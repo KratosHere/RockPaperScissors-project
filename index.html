@@ -12,7 +12,7 @@
 
 
 
-    <!-- div yha daal ker heading wagera likh dunga and height wagera badha dunga jisse gap wagera aajaega -->
+    
 
 
 
@@ -27,21 +27,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- 
     0 - 1/3 => ROCK
     1/3 - 2/3 => PAPER
@@ -54,19 +39,12 @@
 
 
 
-
-
-
-
-    
-
-
     <div id="rockDiv" class="handButtonsdiv">
 
         <button id="rockButton" class="handButton" onclick="
             
             
-            let computerMove;
+            let computerMove_FR;
 
             const randomNum_FR = Math.random();
 
@@ -74,60 +52,155 @@
 
             if (randomNum_FR >= 0 && randomNum_FR < 1/3) {
 
-                computerMove = 'Rock';
+                computerMove_FR = 'Rock';
             }
             
             else if (randomNum_FR >= 1/3 && randomNum_FR < 2/3) {
 
-                computerMove = 'Paper';
+                computerMove_FR = 'Paper';
             }
             
             else if (randomNum_FR >= 2/3 && randomNum_FR < 1) {
 
-                computerMove = 'Scissors';
+                computerMove_FR = 'Scissors';
             }
 
 
-            const result = `You picked Rock, Computer picked ${computerMove}`;
+            const result_FR = `You picked Rock, Computer picked ${computerMove_FR}`;
 
                 
-            //WINNER
+            //WINNERconditions
 
-            if (computerMove === 'Rock') {
+            if (computerMove_FR === 'Rock') {
 
-                alert(`${result} , Its a TIE!!`);
+                alert(`${result_FR} , Its a TIE!!`);
             }
             
-            else if (computerMove === 'Paper') {
+            else if (computerMove_FR === 'Paper') {
 
-                alert(`${result} , Computer Win!!`);
+                alert(`${result_FR} , Computer Win!!`);
             }
             
-            else if (computerMove === 'Scissors') {
+            else if (computerMove_FR === 'Scissors') {
 
-                alert(`${result} , Player Win!`);
+                alert(`${result_FR} , Player Win!`);
             }
             
             
-            
-            
-            
-            
+        
             
             "><i class="fa-regular fa-hand-back-fist"></i>-Rock</button>
 
         
     </div>
 
+
+
+
     <div id="paperDiv" class="handButtonsdiv">
 
-        <button id="paperButton" class="handButton" onclick=""><i class="fa-regular fa-hand"></i>-Paper</button>
+        <button id="paperButton" class="handButton" onclick="
+        
+        
+            let computerMove_FP;
+
+            const randomNum_FP = Math.random();
+
+            //random selection conditions
+
+            if (randomNum_FP >= 0 && randomNum_FP < 1/3) {
+
+                computerMove_FP = 'Rock';
+            }
+            
+            else if (randomNum_FP >= 1/3 && randomNum_FP < 2/3) {
+
+                computerMove_FP = 'Paper';
+            }
+            
+            else if (randomNum_FP >= 2/3 && randomNum_FP < 1) {
+
+                computerMove_FP = 'Scissors';
+            }
+
+        
+            const result_FP = `You picked Paper, Computer picked ${computerMove_FP}`;
+            
+            //WINNERconditions
+
+            if (computerMove_FP === 'Rock') {
+
+                alert(`${result_FP} , Player Win!!`);
+            }
+            
+            else if (computerMove_FP === 'Paper') {
+
+                alert(`${result_FP} , Its a TIE!!`);
+            }
+            
+            else if (computerMove_FP === 'Scissors') {
+
+                alert(`${result_FP} , Computer Win!`);
+            }
+        
+        
+     
+        "><i class="fa-regular fa-hand"></i>-Paper</button>
 
     </div>
 
+
+
     <div id="scissorsDiv" class="handButtonsdiv">
 
-        <button id="scissorsButton" class="handButton" onclick=""><i class="fa-regular fa-hand-scissors"></i>-Scissors</button>
+        <button id="scissorsButton" class="handButton" onclick="
+            
+            
+            let computerMove_FS;
+
+            const randomNum_FS = Math.random();
+
+            //random selection conditions
+
+            if (randomNum_FS >= 0 && randomNum_FS < 1/3) {
+
+                computerMove_FS = 'Rock';
+            }
+            
+            else if (randomNum_FS >= 1/3 && randomNum_FS < 2/3) {
+
+                computerMove_FS = 'Paper';
+            }
+            
+            else if (randomNum_FS >= 2/3 && randomNum_FS < 1) {
+
+                computerMove_FS = 'Scissors';
+            }
+
+        
+            const result_FS = `You picked Scissors, Computer picked ${computerMove_FS}`;
+            
+            //WINNERconditions
+
+            if (computerMove_FS === 'Rock') {
+
+                alert(`${result_FS} , Computer Win!!`);
+            }
+            
+            else if (computerMove_FS === 'Paper') {
+
+                alert(`${result_FS} , Player Win!!`);
+            }
+            
+            else if (computerMove_FS === 'Scissors') {
+
+                alert(`${result_FS} , Its a TIE!!`);
+            }
+
+            
+            
+            
+        "><i class="fa-regular fa-hand-scissors"></i>-Scissors</button>
 
     </div>
 
