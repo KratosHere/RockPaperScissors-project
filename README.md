@@ -1,6 +1,8 @@
 # RockPaperScissors-project
 
 
-I am Currently working on this project !! <br>
+This is a simple Rock Paper Scissors game. In which Player will Choose his/her move and then the result
+will be shown as an ALERT in your browser!! <br>
 
-Will keep Updating the PROJECT!!
+
+PROJECT IS UNDER PROCESS , WILL KEEP UPDATING... AND COMPLETE IT IN FEW DAYS.

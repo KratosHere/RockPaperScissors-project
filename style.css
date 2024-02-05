@@ -1,8 +1,8 @@
-* {
+
+
+body {
     background-color: rgb(140, 188, 192);
 }
-
-
 .handButtonsdiv {
 
     text-align: center;
@@ -15,5 +15,16 @@
 .handButton {
 
     font-size: 60px;
+    background-color: rgb(140, 188, 192);
     
+}
+
+#headingDiv {
+    height: 150px;
+    
+}
+
+#headingH1 {
+    text-align: center;
+    color: rgb(132, 2, 2);
 }

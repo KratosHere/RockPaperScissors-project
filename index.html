@@ -14,17 +14,99 @@
 
     <!-- div yha daal ker heading wagera likh dunga and height wagera badha dunga jisse gap wagera aajaega -->
 
+
+
+    <div id="headingDiv">
+
+        <h1 id="headingH1">Choose your move and lets see the result!!!</h1>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+    0 - 1/3 => ROCK
+    1/3 - 2/3 => PAPER
+    2/3 - 1 => SCISSORS
+
+    FR => The particular thing is For Rock
+    FP => The particular thing is For Paper
+    FS => The particular thing is For Scissors
+    -->
+
+
+
+
+
+
+
+    
+
+
     <div id="rockDiv" class="handButtonsdiv">
 
         <button id="rockButton" class="handButton" onclick="
             
-                
+            
+            let computerMove;
+
+            const randomNum_FR = Math.random();
+
+            //random selection conditions
+
+            if (randomNum_FR >= 0 && randomNum_FR < 1/3) {
+
+                computerMove = 'Rock';
+            }
+            
+            else if (randomNum_FR >= 1/3 && randomNum_FR < 2/3) {
+
+                computerMove = 'Paper';
+            }
+            
+            else if (randomNum_FR >= 2/3 && randomNum_FR < 1) {
+
+                computerMove = 'Scissors';
+            }
+
+
+            const result = `You picked Rock, Computer picked ${computerMove}`;
 
                 
+            //WINNER
+
+            if (computerMove === 'Rock') {
+
+                alert(`${result} , Its a TIE!!`);
+            }
             
+            else if (computerMove === 'Paper') {
+
+                alert(`${result} , Computer Win!!`);
+            }
             
-            
-            
+            else if (computerMove === 'Scissors') {
+
+                alert(`${result} , Player Win!`);
+            }
             
             
             
