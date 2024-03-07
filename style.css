@@ -28,3 +28,13 @@ body {
     text-align: center;
     color: rgb(40, 37, 81);
 }
+
+#headingH1:hover {
+
+    text-decoration: underline red double;
+}
+
+.handButton:hover {
+
+    color: blue;
+}
